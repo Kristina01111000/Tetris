@@ -46,4 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const piecesArray = [lPiece,zPiece,tPiece,oPiece,iPiece];
   
+  let currentPosition = 4;
+  let current = piecesArray[0][0];
+  
+  
 })
