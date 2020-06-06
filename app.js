@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //draw the first rotation of the current piece
   function draw(){
+    // for each object in the pieces array at current position add the current piece
     current.forEach(index => {
       squares[currentPosition + index].classList.add('pieces');
     })
