@@ -50,11 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let current = piecesArray[0][0];
   
   //draw the first rotation of the current piece
-  // change css class name to pieces and remove background color
   function draw(){
     current.forEach(index => {
-      squares[currentPosition + index].classList.add(pieces);
-    }
+      squares[currentPosition + index].classList.add('pieces');
+    })
   }
   draw();
 })
