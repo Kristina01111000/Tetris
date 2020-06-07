@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       unDraw();
       currentPosition += width;
       draw();
+      freeze();
   }
 
     // freeze function, stops pieces from going off the screen
