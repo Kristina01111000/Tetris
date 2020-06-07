@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // .some checks the array for atleast 1 true, if all false it doesnt work
     function freeze(){
       if (current.some(index => squares[currentPosition+index+width].classList.contains('taken'))){
-        current.forEach(index => squares[currentPosition+index+width].classList.add('taken'));
+        current.forEach(index => squares[currentPosition+index].classList.add('taken'));
         // select a new piece
         random = Math.floor(Math.random()*piecesArray.length);
         current = piecesArray[random][currentRotation];
