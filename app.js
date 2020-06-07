@@ -47,12 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const piecesArray = [lPiece,zPiece,tPiece,oPiece,iPiece];
   
   let currentPosition = 4;
-  
   // select a random piece and its rotation and set to current
   let random = Math.floor(Math.random()*piecesArray.length);
   let currentRotation = 0;
-  
-  
   let current = piecesArray[random][currentRotation];
   
   //draw the first rotation of the current piece
@@ -62,16 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentPosition + index].classList.add('pieces');
     })
   }
-  
-  
+    
   // removes the piece from the board so it doesn't stay 
   // onscreen when the next position is drawn
   function unDraw(){
       current.forEach(index => {
         squares[currentPosition + index].classList.remove('pieces');
-      });
-    
+      });    
   }
+  
   // remove the current shape and draw a new one to
   // make the pieces go down the screen every second
   timerId = setInterval(moveDown, 1000);
@@ -93,14 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPosition = 4;
         draw();
         }
-      // select a new piece
-
-      }
-
-
+    }
    draw();
    moveDown();
-  
-  
-  
+    
 })
