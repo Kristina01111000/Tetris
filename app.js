@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentPosition + index].classList.add('pieces');
     })
   }
-  draw();
+  
   
   // removes the piece from the board so it doesn't stay 
   // onscreen when the next position is drawn
@@ -72,5 +72,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     
   }
-  //unDraw();
+  // remove the current shape and draw a new one to
+  // make the pieces go down the screen every second
+  timerId = setInterval(moveDown, 1000);
+  function moveDown(){
+      unDraw();
+      currentPosition += width;
+      draw();
+  }
+
+
+
+   draw();
+   moveDown();
+  
+  
+  
 })
