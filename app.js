@@ -63,4 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
   draw();
+  
+  // removes the piece from the board so it doesn't stay 
+  // onscreen when the next position is drawn
+  function unDraw(){
+      current.forEach(index => {
+        squares[currentPosition + index].classList.remove('pieces');
+      });
+    
+  }
+  //unDraw();
 })
