@@ -47,7 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const piecesArray = [lPiece,zPiece,tPiece,oPiece,iPiece];
   
   let currentPosition = 4;
-  let current = piecesArray[0][0];
+  
+  // select a random piece and its rotation and set to current
+  let random = Math.floor(Math.random()*piecesArray.length);
+  let currentRotation = 0;
+  
+  
+  let current = piecesArray[random][currentRotation];
   
   //draw the first rotation of the current piece
   function draw(){
