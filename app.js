@@ -102,6 +102,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         draw();
       }
+  
+    // assign functions to keycodes(for movement)
+    function control(e){
+      if(e.keyCode === 37){
+        moveLeft();
+      }
+    }
+    document.addEventListener('keyup',control);
+  
    draw();
    moveDown();
     
