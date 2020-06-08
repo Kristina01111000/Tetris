@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isAtLeftEdge){
           currentPosition -=1;
         }
-        if(current.some(index => squares[currentPosition + index].classList.comtains('taken'))){
+        if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
             currentPosition +=1;
         }
         draw();
