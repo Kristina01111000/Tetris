@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
       function moveLeft(){
-        undraw();
+        unDraw();
         const isAtLeftEdge = current.some(index => (currentPosition + index) % width == 0);
         if (!isAtLeftEdge){
           currentPosition -=1;
