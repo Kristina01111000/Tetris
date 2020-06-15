@@ -117,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.addEventListener('keyup',control);
   
+  
+   // start the game
    draw();
    moveDown();
     
