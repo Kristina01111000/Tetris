@@ -7,8 +7,12 @@ Tetris game based on the freecode camp class
 
 - make arrow keys work for right, up, down
 
--remove whole rows when full
+- remove whole rows when full
 
--move everything down when full row is removed
+- move everything down when full row is removed
 
--add score to scoreboard
+- add score to scoreboard
+
+- add end of game when you lose
+
+- make start/pause button work
