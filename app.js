@@ -103,6 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
         draw();
       }
   
+    // move the piece right
+    // stop the piece from wrapping around the screen
+    function moveRight(){
+      unDraw();
+      const isAtRightEdge = current.some(index => (currentPosition + index) % width === 9);
+      if (!isAtRightEdge){
+        currentPosition +=1;
+      }
+
+      if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
+          currentPosition -=1;
+      }
+      draw();
+    }
+  
     // assign functions to keycodes(for movement)
     function control(e){
       if(e.keyCode === 37){
@@ -110,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (e.keyCode === 38) {
         //rotate();
       } else if(e.keyCode === 39){
-        //moveRight();
+        moveRight();
       } else if (e.keyCode === 40){
         moveDown();
       }
