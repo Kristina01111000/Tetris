@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // stop the piece from wrapping around the screen
     function moveRight(){
       unDraw();
-      const isAtRightEdge = current.some(index => (currentPosition + index) % width === 9);
+      const isAtRightEdge = current.some(index => (currentPosition + index) % width === (width-1));
       if (!isAtRightEdge){
         currentPosition +=1;
       }
