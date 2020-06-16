@@ -5,7 +5,7 @@ Tetris game based on the freecode camp class
 
 - change the colors
 
-- make arrow keys work for right, up, down
+- make arrow keys work for up (rotate)
 
 - remove whole rows when full
 
