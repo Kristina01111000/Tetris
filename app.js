@@ -118,6 +118,17 @@ document.addEventListener('DOMContentLoaded', () => {
       draw();
     }
   
+    // rotate the pieces on up key down
+    function rotate(){
+      unDraw();
+      currentRotation++;
+      if(current === current.length){ // so it doesn't go higher that array
+        currentRotation = 0;
+      }
+      current = piecesArray[random][currentRotation];
+      draw();
+    }
+  
     // assign functions to keycodes(for movement)
     function control(e){
       if(e.keyCode === 37){
