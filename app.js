@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function rotate(){
       unDraw();
       currentRotation++;
-      if(current === current.length){ // so it doesn't go higher that array
+      if(currentRotation === current.length){ // so it doesn't go higher that array
         currentRotation = 0;
       }
       current = piecesArray[random][currentRotation];
