@@ -14,3 +14,11 @@
 .pieces {
   background-color: #32CD32;
 }
+
+.minigrid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
