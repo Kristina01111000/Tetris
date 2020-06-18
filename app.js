@@ -143,6 +143,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.addEventListener('keyup',control);
   
+    // show the next piece in minigrid
+    const displaySquares = document.querySelectorAll('.minigrid div');
+    const displayWidth = 4;
+    let displayIndex = 0;
+
+    // all pieces w/o rotations
+    const upNextPiece = [
+      [1,width+1,width*2+1,2],
+      [1,width,width+1,width+2],
+      [1,width,width+1,width+2],
+      [0,1,width,width+1],
+      [1,width+1,width*2+1,width*3+1]
+    ]
+  
   
    // start the game
    draw();
