@@ -3,7 +3,7 @@
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: pink;
+  background-color: black;
 }
 
 .grid div{
@@ -12,5 +12,5 @@
 }
 
 .pieces {
-  background-color: purple;
+  background-color: #32CD32;
 }
