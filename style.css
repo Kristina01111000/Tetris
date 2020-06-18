@@ -22,3 +22,8 @@
   flex-wrap: wrap;
   background-color: black;
 }
+
+.minigrid div{
+  height: 20px;
+  width: 20px;
+}
