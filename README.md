@@ -12,5 +12,3 @@ Tetris game based on the freecode camp class
 - add end of game when you lose
 
 - make start/pause button work
-
-- add a next up view
