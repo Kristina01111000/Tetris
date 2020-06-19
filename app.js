@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //will make grid mean class grid and squares mean an array of all the divs of class grid
   const grid = document.querySelector('.grid');
   let squares = Array.from(document.querySelectorAll('.grid div'));
+  let nextRandom = 0;
 
   const ScoreDisplay = document.querySelector('#score');
   const StartButton = document.querySelector('#start-button');
