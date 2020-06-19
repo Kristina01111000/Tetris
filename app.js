@@ -84,8 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function freeze(){
       if (current.some(index => squares[currentPosition+index+width].classList.contains('taken'))){
         current.forEach(index => squares[currentPosition+index].classList.add('taken'));
-        // select a new piece
-        random = Math.floor(Math.random()*piecesArray.length);
+        // select a new piece  
+        random = nextRandom;
+        nextRandom = Math.floor(Math.random()*piecesArray.length);
         current = piecesArray[random][currentRotation];
         currentPosition = 4;
         draw();
