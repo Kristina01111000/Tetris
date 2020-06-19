@@ -153,11 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // all pieces w/o rotations
     const upNextPiece = [
-      [1,width+1,width*2+1,2],
-      [1,width,width+1,width+2],
-      [1,width,width+1,width+2],
-      [0,1,width,width+1],
-      [1,width+1,width*2+1,width*3+1]
+      [1,displayWidth+1,displayWidth*2+1,2],
+      [0,displayWidth,displayWidth+1,displayWidth*2+1],
+      [1,displayWidth,displayWidth+1,displayWidth+2],
+      [0,1,displayWidth,displayWidth+1],
+      [1,displayWidth+1,displayWidth*2+1,displayWidth*3+1]
     ]
   
   
