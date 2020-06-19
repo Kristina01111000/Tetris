@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         current = piecesArray[random][currentRotation];
         currentPosition = 4;
         draw();
+        displayShape();
         }
     }
   
