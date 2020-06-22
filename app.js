@@ -185,10 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
       }
     })
-  
-  
-   // start the game
-   draw();
-   moveDown();
+
     
 })
