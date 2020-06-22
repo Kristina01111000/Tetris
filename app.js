@@ -173,6 +173,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+     // makes the button work
+    StartButton.addEventListener('click', () => {
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+      } else {
+        draw();
+        timerId = setInterval(moveDown, 1000);
+        nextRandom = Math.floor(Math.random()* piecesArray.length);
+        
+      }
+    })
+  
+  
    // start the game
    draw();
    moveDown();
