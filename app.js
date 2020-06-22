@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   let squares = Array.from(document.querySelectorAll('.grid div'));
   let nextRandom = 0;
-
+  let timerId;
+  
   const ScoreDisplay = document.querySelector('#score');
-  const StartButton = document.querySelector('#start-button');
+  const StartButton = document.querySelector('#startButton');
 
   // making the tetris pieces
   const lPiece = [
