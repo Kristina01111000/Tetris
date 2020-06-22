@@ -8,3 +8,5 @@ Tetris game based on the freecode camp class
 - add end of game when you lose
 
 - make start/pause button work
+
+- separate start/pause button?
