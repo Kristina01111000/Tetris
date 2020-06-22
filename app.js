@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // remove the current shape and draw a new one to
   // make the pieces go down the screen every second
-  timerId = setInterval(moveDown, 1000);
   function moveDown(){
       unDraw();
       currentPosition += width;
