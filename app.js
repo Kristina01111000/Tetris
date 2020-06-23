@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let squares = Array.from(document.querySelectorAll('.grid div'));
   let nextRandom = 0;
   let timerId;
+  let score = 0;
   
   const ScoreDisplay = document.querySelector('#score');
   const StartButton = document.querySelector('#startButton');
