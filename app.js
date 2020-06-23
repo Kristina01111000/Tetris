@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPosition = 4;
         draw();
         displayShape();
+        addScore();
         }
     }
   
