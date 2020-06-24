@@ -207,5 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
       }
+  
+      // end game if at top in initial position
+      function endGame(){
+        if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
+          // end the Game
+            ScoreDisplay.innerHTML = 'end';
+            clearInterval(timerId);
+        }
+      }
     
 })
