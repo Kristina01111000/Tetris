@@ -7,7 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   let nextRandom = 0;
   let timerId;
   let score = 0;
-  
+  const colors = [
+    '#32CD32',
+    '#FF69B4',
+    '#FFFF00',
+    '#FF0000',
+    '#15F4EE'
+  ];
   const ScoreDisplay = document.querySelector('#score');
   const StartButton = document.querySelector('#startButton');
 
