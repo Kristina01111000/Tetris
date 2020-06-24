@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // for each object in the pieces array at current position add the current piece
     current.forEach(index => {
       squares[currentPosition + index].classList.add('pieces');
+      squares[currentPosition + index].style.backgroundColor = colors[random];
     })
   }
     
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function unDraw(){
       current.forEach(index => {
         squares[currentPosition + index].classList.remove('pieces');
+        squares[currentPosition + index].style.backgroundColor = '';
       });    
   }
   
