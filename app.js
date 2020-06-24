@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         draw();
         displayShape();
         addScore();
+        endGame();
         }
     }
   
