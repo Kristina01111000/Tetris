@@ -175,10 +175,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayShape(){
       // removes previous next up from the minigrid
       displaySquares.forEach(square => {
-        square.classList.remove('pieces')
+        square.classList.remove('pieces');
+        square.style.backgroundColor = '';
       })
       upNextPiece[nextRandom].forEach( index => {
         displaySquares[displayIndex + index].classList.add('pieces');
+        displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom];
       })
 
     }
