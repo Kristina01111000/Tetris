@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       function endGame(){
         if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
           // end the Game
-            ScoreDisplay.innerHTML = 'end';
+            ScoreDisplay.innerHTML = ' End of Game';
             clearInterval(timerId);
         }
       }
