@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
   const ScoreDisplay = document.querySelector('#score');
   const StartButton = document.querySelector('#startButton');
+  const ResetButton = document.querySelector('#resetButton');
 
   // making the tetris pieces
   const lPiece = [
