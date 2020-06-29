@@ -199,6 +199,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
       }
     })
+  
+    // make the reset button work // not currently working correctly
+    ResetButton.addEventListener('click', () => {
+      clearInterval(timerId);
+      draw();
+      timerId = setInterval(moveDown, 1000);
+      nextRandom = Math.floor(Math.random()* piecesArray.length);
+      displayShape();
+    })
 
       // remove row when full, move other pieces down,
     //increase score
