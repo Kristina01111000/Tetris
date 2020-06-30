@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let squares = Array.from(document.querySelectorAll('.grid div'));
   let nextRandom = 0;
   let timerId;
+  let speed = 1000;
   let score = 0;
   const colors = [
     '#32CD32',
@@ -193,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timerId = null;
       } else {
         draw();
-        timerId = setInterval(moveDown, 1000);
+        timerId = setInterval(moveDown, speed);
         nextRandom = Math.floor(Math.random()* piecesArray.length);
         displayShape();
         
@@ -223,6 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
           if (row.every(index => squares[index].classList.contains('taken'))){
             score += 10;
             ScoreDisplay.innerHTML = score;
+            speed = speed - 10;
+            timerId = setInterval(moveDown, speed);
             row.forEach ( index => {
               squares[index].classList.remove('taken');
               squares[index].classList.remove('pieces');
