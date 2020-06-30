@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
             score += 10;
             ScoreDisplay.innerHTML = score;
             speed = speed - 10;
+            clearInterval(timerId);
             timerId = setInterval(moveDown, speed);
             row.forEach ( index => {
               squares[index].classList.remove('taken');
