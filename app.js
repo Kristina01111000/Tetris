@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   
-    // make the reset button work // not currently working correctly
+/*    // make the reset button work // not currently working correctly
     // currently stops game from running if not commented out
     ResetButton.addEventListener('click', () => {
       for(let j = 0; j < 199; j ++ ){
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       timerId = setInterval(moveDown, 1000);
       nextRandom = Math.floor(Math.random()* piecesArray.length);
       displayShape();
-    });
+    }); */
 
     // remove row when full, move other pieces down,
     //increase score
