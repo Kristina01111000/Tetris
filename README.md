@@ -8,3 +8,4 @@ Tetris game based on the freecode camp class
     -but leave the bottom row
   - the minigrid works correctly when pressed
   - need to change the current piece
+  - pausing on this to figure out later
