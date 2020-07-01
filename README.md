@@ -1,8 +1,6 @@
 # Tetris
 Tetris game based on the freecode camp class
 
-- make the speed faster as game goes on
-
 - add reset game button
   - need to remove current pieces on bottom  
     -but leave the bottom row
